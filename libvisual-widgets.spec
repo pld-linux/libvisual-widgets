@@ -9,7 +9,7 @@ Group:		Libraries
 Source0:	%{name}-%{bver}.tar.bz2
 # Source0-md5:	9838d54400375ebe6ea1b5a7887dc574
 URL:		http://libvisual.sourceforge.net/
-Buildrequires:	SDL-devel >= 1.2.0
+BuildRequires:	SDL-devel >= 1.2.0
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libtool
