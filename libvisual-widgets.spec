@@ -1,5 +1,5 @@
 Summary:	Libvisual widgets
-Summary(pl):	Abstrakcyjna biblioteka pomiêdzy aplikacjami a wtyczkami wizualizacji audio
+Summary(pl):	Widgety dla libvisual
 Name:		libvisual-widgets
 Version:	0.2.0
 %define	bver	20041130
@@ -17,12 +17,12 @@ BuildRequires:	pkgconfig >= 1:0.14
 BuildRoot:	%{tmpdir}/%{name}-%{bver}-root-%(id -u -n)
 
 %description
-libvisual-widgets is a package that contains standard user interface widgets that
-are to be used together with libvisual itself.
+libvisual-widgets is a package that contains standard user interface
+widgets that are to be used together with libvisual itself.
 
 %description -l pl
-libvisual-widgets to pakiet zawieraj±cy standardowe widgety interfejsu u¿ytkownika,
-które mog± byæ u¿ywane równie¿ przez libvisual.
+libvisual-widgets to pakiet zawieraj±cy standardowe widgety interfejsu
+u¿ytkownika, które mog± byæ u¿ywane równie¿ przez libvisual.
 
 %package devel
 Summary:	Header files for libvisual-widgets library
