@@ -18,11 +18,11 @@ BuildRoot:	%{tmpdir}/%{name}-%{bver}-root-%(id -u -n)
 
 %description
 libvisual-widgets is a package that contains standard user interface widgets that
-are to be used together with libvisual itself
+are to be used together with libvisual itself.
 
 %description -l pl
 libvisual-widgets to pakiet zawieraj±cy standardowe widgety interfejsu u¿ytkownika,
-które mog± byæ u¿ywane równie¿ przez libvisual
+które mog± byæ u¿ywane równie¿ przez libvisual.
 
 %package devel
 Summary:	Header files for libvisual-widgets library
@@ -48,18 +48,6 @@ Static libvisual-widgets library.
 %description static -l pl
 Statyczna biblioteka libvisual-widgets.
 
-#%package tools
-#Summary:	Utilities for libvisual library
-#Summary(pl):	Narzêdzia dla biblioteki libvisual
-#Group:		Development/Libraries
-#Requires:	%{name}-devel = %{version}-%{release}
-#
-#%description tools
-#Utilities for libvisual library.
-#
-#%description static -l pl
-#Narzêdzia dla biblioteki libvisual.
-
 %prep
 %setup -q -n %{name}-%{bver}
 
@@ -71,7 +59,6 @@ Statyczna biblioteka libvisual-widgets.
 %{__automake}
 %configure \
 	--enable-static
-#cp -f lvconfig.h libvisual
 %{__make} 
 
 %install
@@ -79,8 +66,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
-#%{__make} -C tools install \
-#	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -98,13 +83,8 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_libdir}/lib*.so
 %{_libdir}/lib*.la
 %{_includedir}/lvw
-#%{_includedir}/*.h
 %{_pkgconfigdir}/*.pc
 
 %files static
 %defattr(644,root,root,755)
 %{_libdir}/lib*.a
-
-#%files tools
-#%defattr(644,root,root,755)
-#%attr(755,root,root) %{_bindir}/*
