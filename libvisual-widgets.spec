@@ -1,5 +1,5 @@
 Summary:	Libvisual widgets
-Summary(pl):	Widgety dla libvisual
+Summary(pl.UTF-8):   Widgety dla libvisual
 Name:		libvisual-widgets
 Version:	0.2.0
 %define	bver	20041130
@@ -20,32 +20,32 @@ BuildRoot:	%{tmpdir}/%{name}-%{bver}-root-%(id -u -n)
 libvisual-widgets is a package that contains standard user interface
 widgets that are to be used together with libvisual itself.
 
-%description -l pl
-libvisual-widgets to pakiet zawieraj±cy standardowe widgety interfejsu
-uøytkownika, ktÛre mog± byÊ uøywane rÛwnieø przez libvisual.
+%description -l pl.UTF-8
+libvisual-widgets to pakiet zawierajƒÖcy standardowe widgety interfejsu
+u≈ºytkownika, kt√≥re mogƒÖ byƒá u≈ºywane r√≥wnie≈º przez libvisual.
 
 %package devel
 Summary:	Header files for libvisual-widgets library
-Summary(pl):	Pliki nag≥Ûwkowe biblioteki libvisual-widgets
+Summary(pl.UTF-8):   Pliki nag≈Ç√≥wkowe biblioteki libvisual-widgets
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
 %description devel
 Header files for libvisual-widgets library.
 
-%description devel -l pl
-Pliki nag≥Ûwkowe biblioteki-widgets libvisual.
+%description devel -l pl.UTF-8
+Pliki nag≈Ç√≥wkowe biblioteki-widgets libvisual.
 
 %package static
 Summary:	Static libvisual-widgets library
-Summary(pl):	Statyczna biblioteka libvisual-widgets
+Summary(pl.UTF-8):   Statyczna biblioteka libvisual-widgets
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static libvisual-widgets library.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Statyczna biblioteka libvisual-widgets.
 
 %prep
