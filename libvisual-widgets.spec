@@ -1,5 +1,5 @@
 Summary:	Libvisual widgets
-Summary(pl.UTF-8):   Widgety dla libvisual
+Summary(pl.UTF-8):	Widgety dla libvisual
 Name:		libvisual-widgets
 Version:	0.2.0
 %define	bver	20041130
@@ -26,7 +26,7 @@ użytkownika, które mogą być używane również przez libvisual.
 
 %package devel
 Summary:	Header files for libvisual-widgets library
-Summary(pl.UTF-8):   Pliki nagłówkowe biblioteki libvisual-widgets
+Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki libvisual-widgets
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
@@ -38,7 +38,7 @@ Pliki nagłówkowe biblioteki-widgets libvisual.
 
 %package static
 Summary:	Static libvisual-widgets library
-Summary(pl.UTF-8):   Statyczna biblioteka libvisual-widgets
+Summary(pl.UTF-8):	Statyczna biblioteka libvisual-widgets
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
